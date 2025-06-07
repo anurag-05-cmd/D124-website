@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>District 124 Toastmasters International</title>
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">District 124 Toastmasters</div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" onclick="showPage('about')">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="showPage('about-d124')">About D124</a>
+                            <a href="#" onclick="showPage('leaders')">Our Leaders</a>
+                            <a href="#" onclick="showPage('prev-years')">Previous Years</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" onclick="showPage('resources')">Resources</a>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="showPage('pod')">POD</a>
+                            <a href="#" onclick="showPage('cgd')">CGD</a>
+                            <a href="#" onclick="showPage('pr')">PR</a>
+                            <a href="#" onclick="showPage('dfm')">DFM</a>
+                        </div>
+                    </li>
+                    <li><a href="#" onclick="showPage('events')">Events</a></li>
+                    <li><a href="#" onclick="showPage('find-club')">Find a Club</a></li>
+                    <li class="dropdown">
+                        <a href="#" onclick="showPage('newsletter')">Newsletter</a>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="showPage('newsletter-archive')">All Releases</a>
+                        </div>
+                    </li>
+                    <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Page -->
+        <div id="home" class="page-content active">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to District 124</h1>
+                    <p>Empowering leaders through communication and leadership development across our vibrant Toastmasters community</p>
+                    <a href="#" class="cta-button" onclick="showPage('find-club')">Find Your Club</a>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Why Choose Toastmasters?</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>Communication Skills</h3>
+                        <p>Develop confident public speaking abilities through structured programs and supportive feedback from fellow members.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Leadership Development</h3>
+                        <p>Build essential leadership skills by taking on roles and responsibilities within your club and district.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Personal Growth</h3>
+                        <p>Overcome fears, build confidence, and achieve personal and professional goals in a supportive environment.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About D124 Page -->
+        <div id="about-d124" class="page-content">
+            <div class="page-header">
+                <h2>About District 124</h2>
+                <p>Learn about our mission, vision, and commitment to excellence</p>
+            </div>
+            <div class="content-section">
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>Our Mission</h3>
+                        <p>To provide a supportive and positive learning experience in which members are empowered to develop communication and leadership skills, resulting in greater self-confidence and personal growth.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Our Vision</h3>
+                        <p>To be the first-choice provider of dynamic, high-value, experiential communication and leadership skills development.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Our Values</h3>
+                        <p>Integrity, Respect, Service, and Excellence guide everything we do as we support our members' journey to becoming confident communicators and leaders.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Events Page -->
+        <div id="events" class="page-content">
+            <div class="page-header">
+                <h2>Upcoming Events</h2>
+                <p>Stay connected with District 124 activities and opportunities</p>
+            </div>
+            <div class="content-section">
+                <div class="calendar-grid">
+                    <div class="event-card">
+                        <div class="event-date">March 15, 2024</div>
+                        <div class="event-title">District Conference</div>
+                        <p>Annual district conference featuring keynote speakers and educational sessions.</p>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">April 20, 2024</div>
+                        <div class="event-title">Area Contest</div>
+                        <p>International Speech and Table Topics contests at the area level.</p>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">May 10, 2024</div>
+                        <div class="event-title">Leadership Training</div>
+                        <p>Training session for club officers and aspiring leaders.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Find a Club Page -->
+        <div id="find-club" class="page-content">
+            <div class="page-header">
+                <h2>Find a Club</h2>
+                <p>Discover the perfect Toastmasters club for your schedule and goals</p>
+            </div>
+            <div class="content-section">
+                <div class="club-search">
+                    <h3>Search for Clubs</h3>
+                    <input type="text" class="search-input" placeholder="Enter your location or club name">
+                    <button class="search-button">Search Clubs</button>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>Morning Clubs</h3>
+                        <p>Perfect for early risers who want to start their day with inspiration and learning.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Evening Clubs</h3>
+                        <p>Ideal for professionals looking to develop skills after work hours.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Online Clubs</h3>
+                        <p>Join from anywhere with our virtual meeting options for maximum flexibility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page-content">
+            <div class="page-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch with District 124 leadership team</p>
+            </div>
+            <div class="content-section">
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>District Director</h3>
+                        <p>For general inquiries and district-wide matters</p>
+                        <p><strong>Email:</strong> dd@district124.org</p>
+                    </div>
+                    <div class="card">
+                        <h3>Program Quality Director</h3>
+                        <p>For education and training programs</p>
+                        <p><strong>Email:</strong> pqd@district124.org</p>
+                    </div>
+                    <div class="card">
+                        <h3>Club Growth Director</h3>
+                        <p>For new club formation and membership</p>
+                        <p><strong>Email:</strong> cgd@district124.org</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other pages with similar structure -->
+        <div id="leaders" class="page-content">
+            <div class="page-header">
+                <h2>Our Leaders</h2>
+                <p>Meet the dedicated team leading District 124</p>
+            </div>
+            <div class="content-section">
+                <p>Leadership information will be displayed here.</p>
+            </div>
+        </div>
+
+        <div id="resources" class="page-content">
+            <div class="page-header">
+                <h2>Resources</h2>
+                <p>Access educational materials and district resources</p>
+            </div>
+            <div class="content-section">
+                <p>Resource links and materials will be displayed here.</p>
+            </div>
+        </div>
+
+        <div id="newsletter" class="page-content">
+            <div class="page-header">
+                <h2>Newsletter</h2>
+                <p>Stay updated with District 124 news and announcements</p>
+            </div>
+            <div class="content-section">
+                <p>Newsletter content and archives will be displayed here.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#" onclick="showPage('home')">Home</a>
+                <a href="#" onclick="showPage('about-d124')">About</a>
+                <a href="#" onclick="showPage('events')">Events</a>
+                <a href="#" onclick="showPage('find-club')">Find a Club</a>
+                <a href="#" onclick="showPage('contact')">Contact</a>
+            </div>
+            <p>&copy; 2024 District 124 Toastmasters International. All rights reserved.</p>
+            <p>Toastmasters International, the Toastmasters International logo, and all other Toastmasters International trademarks and copyrights are the sole property of Toastmasters International.</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
