@@ -25,7 +25,7 @@
         header {
             background: linear-gradient(135deg, var(--primary-blue), var(--primary-red));
             color: var(--white);
-            padding: 1rem 0;
+            padding: 0.5rem 0;
             position: fixed;
             width: 100%;
             top: 0;
@@ -37,7 +37,7 @@
          display: flex;
          align-items: center;
          justify-content: space-between;
-         padding: 0 16px;
+         padding: 0 1px;
        }
 
         .logo {
@@ -49,6 +49,11 @@
          height: 72px;
          width: auto;
          padding: 12px 0;
+       }
+       .logo a {
+         text-decoration: none;
+         color: inherit;
+         display: inline-block;
        }
         .mobile-menu-btn {
             display: none;
