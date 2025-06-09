@@ -67,6 +67,7 @@
         nav a {
             color: var(--white);
             text-decoration: none;
+              white-space: nowrap;
             padding: 0.5rem 1rem;
             border-radius: 5px;
             transition: all 0.3s ease;
