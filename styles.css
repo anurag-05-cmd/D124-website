@@ -34,20 +34,22 @@
         }
 
         .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 0 16px;
+       }
 
         .logo {
             font-size: 1.8rem;
             font-weight: bold;
             color: var(--yellow);
         }
-
+        .logo img.logo-img {
+         height: 72px;
+         width: auto;
+         padding: 12px 0;
+       }
         .mobile-menu-btn {
             display: none;
             background: none;
@@ -61,7 +63,7 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 1.5rem;
+            gap: 18px;
         }
 
         nav a {
@@ -329,6 +331,9 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+               .logo img.logo-img {
+                  height: 60px;
+                }
             .mobile-menu-btn {
                 display: block;
             }
