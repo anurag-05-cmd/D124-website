@@ -142,7 +142,7 @@
         /* Hero Section */
         .hero {
             /* Remove the white overlay and keep only your image */
-                 url('/assets/TI.png') no-repeat center center,
+                 url('assets/TI.png') no-repeat center center,
            /* Optional: Gradient fallback if image fails to load */
                 linear-gradient(135deg, var(--primary-blue), var(--primary-red));
                 background-size: cover;
