@@ -148,11 +148,13 @@
            /* Gradient fallback if image fails to load */
                 linear-gradient(135deg, var(--primary-blue), var(--primary-red));
                 background-size: cover;
-                height: 70vh;
+                height: 100vh;
+                min-height: 600px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+                margin-top: 80px;
                 position: relative;
         }
 
